@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">My Sudoku Solver</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="benchmark">Benchmark</string>
+    <string name="benchmark_mode">Benchmark Mode</string>
+    <string name="play_sudoku">Play Sudoku</string>
+
+    <string name="add_new_game_button">Add New Game</string>
+
+    <string name="capture_button">Capture</string>
+    <string name="title_activity_load_game">Load Game</string>
+
+    <string name="title_activity_benchmark">Benchmark Solver</string>
+    <string name="grid_not_found_toast">Grid not found, please try again.</string>
+    <string name="failed_to_read_digits_toast">Failed to read digits, please try again.</string>
+    <string name="capture_success_toast">Grid captured successfully.</string>
+    <string name="discard_button">Discard</string>
+    <string name="project_to_gameboard_exception">Failed to project to GameBoard</string>
+    <string name="solve_button">Solve</string>
+    <string name="check_button">Check</string>
+    <string name="ass_text">Assignments:</string>
+    <string name="time_text">Time Taken:</string>
+    <string name="reset_button">Reset</string>
+    <string name="intent_cells">Cells</string>
+    <string name="no_solution_possible">No solution possible. Please check values.</string>
+    <string name="not_enough_cells">Invalid cell values. Not enough given.</string>
+    <string name="align_grid">Align the Sudoku grid inside the square and press Capture.</string>
+    <string name="verify_cells">Verify the read cell values are correct. Press Edit to change any errors.</string>
+    <string name="verifying_cells">Verifying cell values...</string>
+    <string name="intent_solution_cells">solution_cells</string>
+    <string name="all_correct">All values correct!</string>
+
+    <string-array name="strategy_array">
+        <item>Backtracking (Slow)</item>
+        <item>Forwardchecking</item>
+        <item>Forwardchecking DVO</item>
+        <item>GAC</item>
+        <item>Initial GAC</item>
+        <item>SAC</item>
+        <item>Initial SAC</item>
+    </string-array>
+
+</resources>

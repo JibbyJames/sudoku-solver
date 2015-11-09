@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="me.jbuckley.mysudokusolver.SudokuBoardActivity">
+    <item
+        android:id="@+id/benchmark_mode"
+        android:checkable="true"
+        android:title="@string/benchmark_mode"/>
+</menu>

@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="android:panelFullBackground">@drawable/spinner_item</item>
+    </style>
+
+    <style name="MyAppActionBarTheme" parent="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+        <item name="android:popupMenuStyle">@style/MyApp.PopupMenu</item>
+    </style>
+
+    <!-- The beef: background color for Action Bar overflow menu -->
+    <style name="MyApp.PopupMenu" parent="android:Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@color/white</item>
+    </style>
+
+</resources>

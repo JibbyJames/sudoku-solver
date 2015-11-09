@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <FrameLayout
+        android:id="@+id/my_camera_preview_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <me.jbuckley.mysudokusolver.camera.CameraPreview
+            android:id="@+id/my_camera_preview"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        </me.jbuckley.mysudokusolver.camera.CameraPreview>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/top_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@color/trans_80"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="@string/align_grid"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16dp"/>
+
+        <FrameLayout
+            android:id="@+id/gameBoardLayout_frame"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <ImageView
+                android:id="@+id/sudoku_background_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"/>
+
+            <me.jbuckley.mysudokusolver.SudokuBoardView
+                android:id="@+id/gameBoardLayout_camera"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/game_board_border"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <me.jbuckley.mysudokusolver.DigitsLayout
+                android:id="@+id/digits"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="10"
+                android:paddingBottom="@dimen/button_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin_half"
+                android:paddingRight="@dimen/activity_horizontal_margin_half"
+                android:rowCount="1"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/digits"
+                android:animateLayoutChanges="true"
+                android:background="@color/trans_80"
+                android:paddingBottom="@dimen/button_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/button_margin">
+
+                <Button
+                    android:id="@+id/save_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/button_margin"
+                    android:layout_marginRight="@dimen/button_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/light_button"
+                    android:text="Save"/>
+
+                <Button
+                    android:id="@+id/edit_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/button_margin"
+                    android:layout_marginRight="@dimen/button_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/light_button"
+                    android:text="Edit"/>
+
+                <Button
+                    android:id="@+id/capture_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/button_margin"
+                    android:layout_marginRight="@dimen/button_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/light_button"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

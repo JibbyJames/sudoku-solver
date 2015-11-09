@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin_half">8dp</dimen>
+    <dimen name="activity_vertical_margin_half">8dp</dimen>
+
+    <dimen name="button_margin">8dp</dimen>
+    <dimen name="benchmark_text">20sp</dimen>
+    <dimen name="sudoku_border_width">2dp</dimen>
+    <dimen name="sudoku_gridline_width">1dp</dimen>
+
+    <integer name="sudoku_total_cells">81</integer>
+    <integer name="sudoku_total_columns">9</integer>
+    <integer name="sudoku_total_rows">9</integer>
+</resources>

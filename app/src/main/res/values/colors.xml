@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue">#33B5E5</color>
+    <color name="light_blue">#EBF5FF</color>
+    <color name="red">#FF4444</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="trans_blue">#3333B5E5</color>
+    <color name="trans">#00000000</color>
+    <color name="trans_80">#80000000</color>
+    <color name="trans_white_80">#80FFFFFF</color>
+    <color name="trans_light_blue">#33EBF5FF</color>
+
+    <color name="button_light">#D0DAF5</color>
+    <color name="button_med">#A2B3E3</color>
+    <color name="button_dark">#5E6F9F</color>
+
+    <color name="button_red_light">#fff07e7b</color>
+    <color name="button_red_med">#ffbe3730</color>
+    <color name="button_red_dark">#ffc44741</color>
+
+    <color name="camera_cell_font_default">#2EFEF7</color>
+    <color name="camera_cell_font_selected">#0080FF</color>
+    <integer name="camera_cell_font_size">20</integer>
+
+    <color name="cell_default">@color/white</color>
+    <color name="cell_font_default">#ff000000</color>
+    <color name="cell_selected">#ffdafffd</color>
+    <color name="cell_correct_font">@android:color/holo_green_dark</color>
+    <color name="cell_incorrect_font">@android:color/holo_red_dark</color>
+
+    <color name="solid_cell_default">#fffffdcb</color>
+    <color name="solid_cell_selected">#fff4efa1</color>
+
+    <color name="sudoku_border">@color/black</color>
+
+    <integer name="button_disabled_alpha">30</integer>
+    <integer name="button_enabled_alpha">255</integer>
+
+
+</resources>
